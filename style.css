@@ -101,6 +101,7 @@ p {
 
 .pj-grid {
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -111,12 +112,12 @@ p {
 }
 
 .project-tile img {
-  width: 350px;
+  max-width: 450px;
 }
 
 #contact {
-  display: block;
   background: #333333;
+  flex-direction: column;
 }
 
 #contact h1 {
@@ -128,15 +129,10 @@ p {
 }
 
 #contact ul {
-  display: flex;
-  flex-flow: row wrap;
-  padding-top: 75px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  gap: 30px;
   margin: auto;
+}
+
+div#contact-title {
 }
 
 #contact li {
@@ -144,15 +140,16 @@ p {
   list-style: none;
 }
 
-img {
+
+.profile-link-img {
   display: inline;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 @media all and (max-width: 490px) {
   
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 
 nav ul {
@@ -161,6 +158,10 @@ nav ul {
 
 .pj-grid {
   grid-template-columns: auto;
+}
+
+#projects img {
+  max-width: 220px;
 }
 
 #contact ul {
